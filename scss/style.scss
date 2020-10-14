@@ -1,0 +1,135 @@
+$primary: #3292a6;
+$bg-black: #252525;
+$color-white: #fff;
+
+
+body {
+    margin-top: 90px;
+}
+.navbar {
+
+    box-shadow: 2px 2px 5px $primary;
+    background: $color-white;
+    opacity: 0.9;
+
+    .nav-item {
+        font-size: 1.4rem;
+        padding-right: 20px;
+
+        .nav-link {
+            color: $bg-black;
+        }
+
+        .nav-link:hover {
+            color: $primary;
+        }
+    }
+
+    .nav-item:last-child {
+        padding-right: 0;
+    }
+
+}
+
+#home-section {
+    position: relative;
+    background: url('../img/mountains.jpg') no-repeat center top;
+    background-size: cover;
+    min-height: 600px;
+
+    .primary-overlay {
+        background: rgba(50, 146, 156, 0.7);
+        min-height: 600px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .first-col {
+        padding-top: 100px;
+    }
+}
+
+#subscribe-section {
+    background: $bg-black;
+
+    .subscribe-inner {
+        padding-top:45px;
+        padding-bottom: 40px;
+    }
+}
+
+#authors-section {
+    img {
+        margin-top: -100px;
+    }
+
+    .fab {
+        width: 45px;
+        height: 45px;
+        border-radius: 5px;
+        font-size: 30px;
+        background: #E9ECEF;
+        padding: 10px;
+    }
+    .card {
+        border-radius: 8px;
+
+        .card-body:hover {
+            background: $primary;
+            border-radius: 8px;
+            color: $color-white;
+
+            h4 {
+                color: $color-white !important;
+            }
+
+            .fab {
+                background: $bg-black;
+                color: $color-white;
+            }
+        }
+    }
+    .authors-inner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+    }
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 992px) {
+    #authors-section {
+        .card:nth-child(1),
+        .card:nth-child(2) {
+            margin-bottom: 100px;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    #home-section {
+        h1 {
+            font-size: 80px;
+        }
+    }
+    #authors-section {
+        .card {
+            margin-bottom: 100px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    #home-section {
+        h1 {
+            font-size: 50px;
+        }
+    }
+}
